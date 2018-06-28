@@ -2,6 +2,10 @@
 
 ## Topics Covered In This Lesson
 
+* Feeding Dynamic Content to Our Pages
+* How To Retrieve Resources From the Internet
+* Building Forms of Content Management Systems (CMS)
+
 ## Getting Started
 
 I am still debating on how to deploy the stub code for starting the assignments. To be honest, I usually think its good practice to learn how to code from the ground up, since this will be the case for most things you work on in industry. This lesson assumes you have completed 'Lesson 1' If not, please go back and complete it.
@@ -18,7 +22,7 @@ create-react-app lesson_two
 Shown below is the desired structure of the project.
 
 ```
-lesson_one
+lesson_two
 |-- README.md
 |-- package.json
 |-- public
@@ -55,7 +59,11 @@ mkdir -p src/resources/data
 mv src/logo.svg src/resources/img/logo.svg
 ```
 
-# TODO Add JSON download link
+Download the EWS Usage file using the command below
+
+```sh
+curl -o src/resources/data/ewsusage.json -L https://raw.githubusercontent.com/ecepulse/react_lesson_two/master/src/resources/data/ewsusage.json?token=AKMjcDAuuHmuPyjPZGtn8uk6eZpGu751ks5bPe1cwA%3D%3D
+```
 
 For any new classes made in this tutorial, you will need to follow the template below.
 
