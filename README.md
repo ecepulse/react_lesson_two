@@ -1,4 +1,4 @@
-# React Lesson 2
+# React Lesson 2 [![Build Status](https://travis-ci.com/ecepulse/react_lesson_two.svg?token=BmZ3PnHpPckcpBNdEJtq&branch=master)](https://travis-ci.com/ecepulse/react_lesson_two)
 
 ## Topics Covered In This Lesson
 
