@@ -291,9 +291,14 @@ fetch('https://api.github.com/users/binary-eater/repos')
     }
 });
 
+// Both types of functions do not require a function name and 
+// can be passed as arguments or assigned to variables in JavaScript
+// arg respresents an argument passed to the implicit functions
+// Examples include (), (arg_one, arg_two), (arg_one, arg_two, arg_three)
+// Basically, these functions can take any number of parameters we specify
 /*
  * Arrow Function
- *
+ *  
  * (arg) => {
  *     console.log(arg);
  * }
@@ -418,7 +423,11 @@ Now, here comes the constructor.
         // Building a refresh button that when clicked will update the page with new information
         let refreshButton = 
             <Button
-                onClick={this._retrieveUsageData}
+                onClick={() => {
+                        this._retrieveUsageData();
+                        alert('Completed updating EWS Usage info');
+                    }
+                }
             >
                 Refresh <Glyphicon glyph="refresh" />
             </Button>;

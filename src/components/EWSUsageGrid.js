@@ -21,7 +21,11 @@ export default class EWSUsageGrid extends Component {
 
         let refreshButton = 
             <Button
-                onClick={this._retrieveUsageData}
+                onClick={() => {
+                        this._retrieveUsageData();
+                        alert('Completed updating EWS Usage info');
+                    }
+                }
             >
                 Refresh <Glyphicon glyph="refresh" />
             </Button>;
