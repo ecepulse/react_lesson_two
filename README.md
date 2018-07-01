@@ -401,7 +401,7 @@ So we are probably going to need a function to retrieve the data (`_retrieveUsag
         }
         return tableData;
     }
-    ```
+```
 
 Whenever `this.setState()` is called, the UI if our webpage is refreshed.
 
